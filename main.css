@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 2% 10%;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Georgia;
+    max-width: 60%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    position: absolute;
+    bottom: -15%;
+}
+
+h4 {
+    text-transform: uppercase;
+    margin-top: -2%;
+    margin-left: 105%;
+    rotate: 90deg;
+}
+
+p {
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    max-width: 20vw;
+}
+
+.main-content {
+    height: 160vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+}
+
+.item {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.yasin, .saken, .beibarys {
+    margin-top: 20%;
+    margin-bottom: -20%;
+}
+
+.f1 {
+    background-image: url("mukhamedzhan.jpg");
+}
+.f2 {
+    background-image: url("yasin.jpg");
+}
+.f3 {
+    background-image: url("baqktiyar.jpg");
+}
+.f4 {
+    background-image: url("yelnar.jpg");
+}
+.f5 {
+    background-image: url("saken.jpg");
+}
+.f6 {
+    background-image: url("zhalgas.jpg");
+}
+.f7 {
+    background-image: url("magzhan.jpg");
+}
+.f8 {
+    background-image: url("beibarys.jpg");
+}
+.f9 {
+    background-image: url("bekarys.jpg");
+}
+
+@media screen and (max-width: 700px) {
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .information {
+        display: initial;
+    }
+
+    .info {
+        max-width: initial;
+    }
+
+    .yasin, .saken, .beibarys {
+        margin-top: initial;
+        margin-bottom: initial;
+    }
+
+    :nth-child(2n) {
+        margin-top: 20%;
+        margin-bottom: -20%;
+    }
+
+    h1 {
+        max-width: initial;
+    }
+
+    h3 {
+        bottom: -35%;
+    }
+}
